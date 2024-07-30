@@ -1,0 +1,32 @@
+.card {
+    list-style: none;   
+    margin: 0 17px 20px 0;
+    line-height: 0;
+    max-width: 282px;
+    
+}
+
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        max-width: 330px;
+    }
+    .card:nth-child(3n) {
+        margin-right: 17px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .card  {
+        max-width: calc(100vw - 100px);
+    }     
+}
+
+@media screen and (max-width: 440px) {
+    .card  {
+        max-width: 282px;
+    }     
+}

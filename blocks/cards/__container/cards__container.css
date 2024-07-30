@@ -1,0 +1,29 @@
+.cards__container {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .cards__container{
+        max-width: calc(100vw - 100px);
+    }     
+}
+
+@media screen and (max-width: 795px) {
+    .cards__container {
+        flex-direction: column;
+        align-items: center;
+               
+    }     
+}
+
+@media screen and (max-width: 440px) {
+    .cards__container{
+        max-width:  282px;
+    }     
+}

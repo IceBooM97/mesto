@@ -1,0 +1,20 @@
+.card__name {
+    color: black;    
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29.05px;
+    margin-left: 21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 210px;
+}
+
+@media screen and (max-width: 440px) {
+    .card__name  {
+    font-size: 24px;
+    line-height: 29.05px;
+    }     
+}
+
+
