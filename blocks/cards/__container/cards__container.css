@@ -4,23 +4,24 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 17px;
     padding: 0;
 }
 
 @media screen and (max-width: 900px) {
     .cards__container{
         max-width: calc(100vw - 100px);
+        justify-content: space-evenly;
     }     
 }
 
-@media screen and (max-width: 795px) {
+/* @media screen and (max-width: 795px) {
     .cards__container {
         flex-direction: column;
         align-items: center;
-               
+        justify-content: space-between;       
     }     
-}
+} */
 
 @media screen and (max-width: 440px) {
     .cards__container{

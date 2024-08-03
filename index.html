@@ -9,8 +9,7 @@
 <body class="body">
     <div class="root">
         <header class="header">
-            <div class="header__logo header__logo_white" >
-
+            <div class="header__logo header__logo_white" >                
             </div>
         </header>
         <main class="main">
@@ -27,48 +26,7 @@
             </section>
             <section class="cards">
                 <ul class="cards__container">
-                    <li class="card">
-                        <img class="card__image" src="./images/baikal.jpg" alt="Байкал">
-                        <div class="card__info">
-                            <h2 class="card__name">Байкал</h2>
-                            <button class="card__like-button"></button>
-                        </div>      
-                    </li>
-                    <li class="card">
-                        <img class="card__image" src="./images/dombay.jpg" alt="Домбай">
-                        <div class="card__info">
-                            <h2 class="card__name">Домбай</h2>
-                            <button class="card__like-button"></button>
-                        </div> 
-                    </li> 
-                    <li class="card">
-                        <img class="card__image" src="./images/kavkaz.jpg" alt="Кавказские горы">
-                        <div class="card__info">
-                            <h2 class="card__name">Кавказские горыdddddddddddd</h2>
-                            <button class="card__like-button"></button>
-                        </div> 
-                    </li>
-                    <li class="card">
-                        <img class="card__image" src="./images/elbrus.jpg" alt="Эльбрус">
-                        <div class="card__info">
-                            <h2 class="card__name">Эльбрус</h2>
-                            <button class="card__like-button"></button>
-                        </div> 
-                    </li>
-                    <li class="card">
-                        <img class="card__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                        <div class="card__info">
-                            <h2 class="card__name">Карачаевск</h2>
-                            <button class="card__like-button"></button>
-                        </div> 
-                    </li>
-                    <li class="card">
-                        <img class="card__image" src="./images/taman.jpg" alt="Тамань">
-                        <div class="card__info">
-                            <h2 class="card__name">Тамань</h2>
-                            <button class="card__like-button"></button>
-                        </div> 
-                    </li>
+                    
                 </ul>
             </section>            
         </main>
@@ -78,16 +36,46 @@
             </p>  
         </footer>
     </div>
-    <div class="popup popup_opened">  <!-- popup_opened -->
+    <div class="popup popup_type_edit" id="popupEdit">  <!-- popup_opened -->
         <div class="popup__container">
             <button class="popup__close-button" type="button" aria-label="Кнопка закрытия"></button>
             <h2 class="popup__header">Редактировать профиль</h2>
-            <form class="form" action="#">
-                <input class="form__input form__input_name" type="text" placeholder="Имя">
-                <input class="form__input form__input_description" type="text" placeholder="О себе">
-                <button class="form__submit-button" type="submit">Сохранить</button>
+            <form class="form" action="#" name="formEdit">
+                <input class="form__input form__input_name" type="text" placeholder="Имя" name="profileName" required>
+                <input class="form__input form__input_description" type="text" placeholder="О себе" name="profileDescription" required>
+                <button class="form__submit-button" type="submit" aria-label="Кнопка сохранения">Сохранить</button>
             </form>
         </div>
     </div>
+    <div class="popup popup_type_add" id="popupAdd">  <!-- popup_opened -->
+        <div class="popup__container">
+            <button class="popup__close-button" type="button" aria-label="Кнопка закрытия"></button>
+            <h2 class="popup__header">Новое место</h2>
+            <form class="form" action="#" name="formAdd">
+                <input class="form__input form__input_image-name" type="text" placeholder="Название" name="imageName" required>
+                <input class="form__input form__input_link" type="url" placeholder="Ссылка на картинку" name="imageLink" required>
+                <button class="form__submit-button" type="submit" aria-label="Кнопка создания">Создать</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup_type_image" id="popupTypeImage">  <!-- popup_opened -->
+        <div class="popup__container_type_image">
+            <button class="popup__close-button" aria-label="Закрытие картинки" type="button"></button>            
+            <img class="popup__image" alt="Картинка" src="">
+            <h2 class="popup__image-name"></h2>
+        </div>
+    </div>
+    <template id="cardTemplate">
+        <li class="card">
+            <img class="card__image" src="" alt="">
+            <button class="card__delete-button" aria-label="Кнопка удаления"></button>
+            <div class="card__info">
+                <h2 class="card__name"></h2>
+                <button class="card__like-button" aria-label="Кнопка лайка"></button>
+            </div>      
+        </li>
+    </template> 
+    <script src="./initialCards.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

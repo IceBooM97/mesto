@@ -11,6 +11,7 @@
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.1s linear ;
+    margin-left: auto;
 }
 
 .profile__add-button:hover {
@@ -20,6 +21,7 @@
 @media screen and (max-width: 900px) {
     .profile__add-button {
         max-width: 335px;
+        margin-left: 0;
     }
 }
 
