@@ -22,7 +22,7 @@
 
 **GitHub Pages**
 
-Ссылка на сайт (GitHub Pages)
+Ссылка на сайт [(GitHub Pages)](https://iceboom97.github.io/mesto/)
 
 **Используемые технологии**
 
